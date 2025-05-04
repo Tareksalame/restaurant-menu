@@ -1,21 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { UserProvider } from "./usercontext";
-import Header from "./Components/Header/Header";
-import Slider from "./Components/Slider/Slider";
-import Menu from "./Components/Menu/Menu";
-import Modal from "./Components/Modal/Modal";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <UserProvider>
-      <div className="App">
-        <Header />
-        <Slider />
-        <Menu />
-        <Modal />
-      </div>
-    </UserProvider>
+    <div className="App">
+      <UserProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </BrowserRouter>
+      </UserProvider>
+    </div>
   );
 }
 

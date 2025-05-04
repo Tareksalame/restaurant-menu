@@ -1,9 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
-import { FaHamburger, FaWater } from "react-icons/fa";
-import pizza from "./images/pizza.jpeg";
-import burger from "./images/burger.jpeg";
 import drink from "./images/drink.jpeg";
-import fork from "./images/fork.png";
 import عروسة from "./images/عروسة.png";
 import chips from "./images/chips.png";
 

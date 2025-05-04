@@ -7,7 +7,7 @@ import Modal from "../Components/Modal/Modal";
 
 export default function HomePage() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Slider />
       <Menu />
